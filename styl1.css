@@ -1,0 +1,48 @@
+body{
+    background-color: orange;
+}
+.navprzycisk{
+    text-align: center;
+    height:80px ;
+    color: white;
+}
+.navprzycisk:hover{
+    color: lightgray;
+}
+#paseknawigacji{
+    background-color: rgb(44, 47, 48);
+    height: 80px;
+    position: relative;
+}
+#glowna{
+    float: left;
+    width: 30%;
+}
+#wyroznionyartykul{
+    float: left;
+    width: 20%;
+}
+#nawigacja{
+    float: right;
+    width: 20%;
+}
+#zgloszenie{
+    float: right;
+    width: 20%;
+}
+#artykul{
+    float: left;
+}
+#rekomencaje{
+    float: left;
+}
+
+main{
+    font-size: large;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+#kalkulator{
+    text-align: center;
+}
