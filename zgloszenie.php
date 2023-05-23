@@ -27,9 +27,9 @@
             <form action="zgloszenie.php" method="post">
                 <label for="uzytkownik">Nazwa użytkownika </label>
                 <input type="text" name="uzytkownik" id="uzytkownik"> <br>
-                <label for="zgloszenie">Opisz problem </label>
-                <input type="text" name="zgloszenie" id="zgloszenie"><br>
-                <input type="submit" value="Zgłoś">
+                <label for="problem">Opisz problem </label>
+                <input type="text" name="problem" id="problem"><br>
+                <input type="submit" value="Zgłoś"><br>
             </form>
             <?php
 
