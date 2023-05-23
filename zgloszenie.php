@@ -25,14 +25,20 @@
         </nav>
         <article class="artykul">
             <form action="zgloszenie.php" method="post">
-                <label for="uzytkownik">Nazwa użytkownika </label>
-                <input type="text" name="uzytkownik" id="uzytkownik"> <br>
-                <label for="problem">Opisz problem </label>
-                <input type="text" name="problem" id="problem"><br>
+                <label for="uzytkownik">Nazwa użytkownika </label> <br>
+                <input type="text" name="uzytkownik" id="uzytkownik"> <br> <br>
+                <label for="problem">Opisz problem </label><br>
+                <textarea id="problem" name="problem" rows="4" cols="50"></textarea><br><br>
                 <input type="submit" value="Zgłoś"><br>
             </form>
             <?php
-
+                $pol=mysqli_connect("localhost","root","","zgloszenia");
+                $uzytkownik=$_POST['uzytkownik'];
+                $zgloszenie=$_POST['problem'];
+                
+                $kom= mysqli_query($pol,"INSERT INTO formulasz (`nazwa_uzytkownika`,`problem`) VALUES ('$uzytkownik','$zgloszenie')");
+                
+                mysqli_close($pol);
             ?>
         </article>
     </main>
