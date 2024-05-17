@@ -1,0 +1,78 @@
+body{
+    background-color: yellow;
+}
+.navprzycisk{
+    text-align: center;
+    height:80px ;
+    color: white;
+}
+.navprzycisk:hover{
+    color: lightgray;
+}
+#paseknawigacji{
+    background-color: rgb(44, 47, 48);
+    height: 80px;
+    position: relative;
+}
+#glowna{
+    float: left;
+    width: 30%;
+}
+#wyroznionyartykul{
+    float: left;
+    width: 20%;
+}
+#nawigacja{
+    float: right;
+    width: 20%;
+}
+#zgloszenie{
+    float: right;
+    width: 20%;
+}
+#artykul{
+    float: left;
+}
+#rekomencaje{
+    float: left;
+}
+.ADS{
+    background-color: gray;
+}
+#sidebarADS{
+    float: right;
+    width: 200px;
+    margin: 10px;
+    padding: 3px;
+    
+}
+#bottomADS{
+    clear: both;
+    width: 100%;
+    height: 230px;
+    margin: 7px;
+    padding: 3px;
+}
+#bottomADS img{
+    height: 100%;
+}
+.ADS img{
+    width: 100%;
+    object-fit: fill;
+}
+#stopka{
+    clear: both;
+    background-color: lightslategray;
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    padding: 1px;
+}
+main{
+    font-size: large;
+    padding-left: 70px;
+    padding-right: 70px;
+    
+}
+#kalkulator{
+    text-align: center;
+}
