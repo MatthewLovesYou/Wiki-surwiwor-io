@@ -36,7 +36,13 @@ body{
 #rekomencaje{
     float: left;
 }
+#stopka{
+    clear: both;
+    background-color: lightslategray;
+    width: 100%;
+    margin: 20px;
 
+}
 main{
     font-size: large;
     padding-left: 70px;
