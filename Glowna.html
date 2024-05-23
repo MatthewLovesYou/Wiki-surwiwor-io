@@ -25,11 +25,37 @@
             </div></a>
         </nav>
         <section id="sidebarADS" class="ADS">
-            <a href=""><img src="Casino-Marbella-See-Hear-Taste-Touch-Smell.gif" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
-            <a href=""><img src="1_QZfacNRk6idRsxB-gXe8Dw.gif" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
-            <a href=""><img src="static-assets-upload13370540684982857738.webp" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
-            <a href=""><img src="betus-promo.gif" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
+            <a href=""><img class="verticalAD" id="ImagesTest" src="test" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
+            <a href=""><img class="verticalAD" src="" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
+            <a href=""><img class="verticalAD" src="" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
+            <a href=""><img class="verticalAD" src="" alt="Wyłącz Adblocka, aby nasza strona mogła działać!"></a>
         </section>
+        <script>
+            const img1 = "Casino-Marbella-See-Hear-Taste-Touch-Smell.gif"
+            const img2 = "1_QZfacNRk6idRsxB-gXe8Dw.gif"
+            const img3 = "static-assets-upload13370540684982857738.webp"
+            const img4 = "betus-promo.gif"
+            const imgSource = [img1,img2,img3,img4]
+
+            function RandomIMGs(){
+                
+                var images = Array.from(document.getElementsByClassName("verticalAD"));
+                images = listShuffle(images);
+                for (var i = images.length-1; i>=0 ; i--){
+                    images[i].src = imgSource[i];
+                }
+            }
+            function listShuffle(list){
+                console.log("Losuję liste: "+list )
+                for (let index = list.length-1; index>0 ; index--){
+                    var randIndex = Math.floor(Math.random() * index);
+                    [list[index], list[randIndex]] = [list[randIndex], list[index]]; 
+                }
+                console.log("list przelosowana: "+list )
+                return list;
+            }
+            RandomIMGs()
+        </script>
         <h1>Witaj na wiki Survivor.io</h1>
         <article class="artykul">
             <ul id="opisgry">
